@@ -1,0 +1,151 @@
+/* Import fonts,body stykling and general css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face{
+    font-family: 'Norse';
+    src: url(/Norse-Bold.otf);
+    font-weight: bold;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    max-width: 90%;
+    border-radius: 1.4rem;
+    box-shadow: 0 0 15px 2px rgba(100, 118, 122, 0.664);
+    /* overflow: hidden; */
+}
+/* Styling of the image section */
+.hero-image{
+    height: 100vh;
+    width: 40%;
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-repeat: no-repeat;
+
+}
+
+.logo-bar{
+    height: 150px;
+    margin-top: 25% ;
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Norse;
+    font-size: 3rem;
+    background: rgb(0, 0, 0 , 0.7);
+}
+
+.logo-bar > img {
+    height: 100%;
+}
+
+/* Styling of the main section */
+
+main {
+    height: 100%;
+    max-width: 65%;
+    background-color: #FAFAFA;
+}
+
+.text{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 33%;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 90%;
+}
+
+.form{
+    height: 75%;
+    width: 100%;
+}
+
+.form-container{
+    background-color: #FFF;
+    padding: 2rem 2rem;
+    box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, .5);
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.form-container > p {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.form-cell {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    width: 33%;
+}
+
+.form-cell label {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+form  input {
+    border: 1px solid #D6D9DC;
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.button {
+    padding-left: 3rem;
+}
+
+.button > a {
+    color: #596D48;
+}
+
+button {
+    background-color: #4b6d2d;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
