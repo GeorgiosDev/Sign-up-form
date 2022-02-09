@@ -7,10 +7,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+@font-face {
+    font-family: Norse;
+    src: url('./font/Norse-Bold.otf');
+}
+
 @font-face{
     font-family: 'Norse';
-    src: url('./font/Norse-Bold.otf');
     font-weight: bold;
+    src: url('./font/Norse-Bold.otf');
 }
 
 *{
